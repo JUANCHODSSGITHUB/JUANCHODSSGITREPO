@@ -41,10 +41,24 @@
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Dss1UiV1Application">
     <configuration name="Dss1UiV1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="DSS1-UI-V1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dss1uiv1.Dss1UiV1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dss2RestBeV1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="DSS2-REST-BE-V1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dss2restbev1.Dss2RestBeV1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dss3MsLoginV1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="DSS3-MS-LOGIN-V1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dss3msloginv1.Dss3MsLoginV1Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -59,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666673020743</updated>
       <workItem from="1666673022033" duration="625000" />
-      <workItem from="1666674941601" duration="2591000" />
+      <workItem from="1666674941601" duration="2901000" />
     </task>
     <servers />
   </component>

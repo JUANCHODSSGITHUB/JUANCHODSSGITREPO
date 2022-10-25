@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DSS1-UI-V1/DSS1-UI-V1.iml" filepath="$PROJECT_DIR$/DSS1-UI-V1/DSS1-UI-V1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSS2-REST-BE-V1/DSS2-REST-BE-V1.iml" filepath="$PROJECT_DIR$/DSS2-REST-BE-V1/DSS2-REST-BE-V1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/DSS3-MS-LOGIN-V1.iml" filepath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/DSS3-MS-LOGIN-V1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSS4-MS-MOVIE-V1/DSS4-MS-MOVIE-V1.iml" filepath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/DSS4-MS-MOVIE-V1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JUANCHODSSGITREPO.iml" filepath="$PROJECT_DIR$/.idea/JUANCHODSSGITREPO.iml" />
     </modules>
   </component>
