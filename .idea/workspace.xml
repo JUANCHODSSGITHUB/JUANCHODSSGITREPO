@@ -100,6 +100,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dss7EurekaV1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="DSS7-EUREKA-V1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dss7eurekav1.Dss7EurekaV1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
