@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38c97e7f-28b9-43ec-98c6-35bdcab63952" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS2-REST-BE-V1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS2-REST-BE-V1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS7-EUREKA-V1/src/main/java/com/example/dss7eurekav1/Dss7EurekaV1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS7-EUREKA-V1/src/main/java/com/example/dss7eurekav1/Dss7EurekaV1Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,19 +34,24 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/COLLABERA/Documents/JAVA Training/Capstone Project/DSS1-UI-V1",
+    "last_opened_file_path": "C:/Users/COLLABERA/metHub/02 SPRING BOOT/M3-ServiceDiscoveryEureka-R1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "70d4092bd74c98588eac6ec33adc8c04"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.Dss1UiV1Application">
+  <component name="RunManager" selected="Spring Boot.Dss7EurekaV1Application">
     <configuration name="Dss1UiV1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="DSS1-UI-V1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dss1uiv1.Dss1UiV1Application" />
@@ -105,7 +111,10 @@
       <option name="presentableId" value="Default" />
       <updated>1666673020743</updated>
       <workItem from="1666673022033" duration="625000" />
-      <workItem from="1666674941601" duration="3597000" />
+      <workItem from="1666674941601" duration="8332000" />
+      <workItem from="1666748323198" duration="6116000" />
+      <workItem from="1666849016529" duration="5320000" />
+      <workItem from="1666921735135" duration="8344000" />
     </task>
     <servers />
   </component>
