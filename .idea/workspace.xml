@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="38c97e7f-28b9-43ec-98c6-35bdcab63952" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "spring.configuration.checksum": "70d4092bd74c98588eac6ec33adc8c04"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.Dss7EurekaV1Application">
@@ -112,7 +119,7 @@
       <workItem from="1666674941601" duration="8332000" />
       <workItem from="1666748323198" duration="6116000" />
       <workItem from="1666849016529" duration="5320000" />
-      <workItem from="1666921735135" duration="9838000" />
+      <workItem from="1666921735135" duration="10178000" />
     </task>
     <servers />
   </component>
