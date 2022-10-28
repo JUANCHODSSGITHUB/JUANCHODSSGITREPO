@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38c97e7f-28b9-43ec-98c6-35bdcab63952" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS7-EUREKA-V1/src/main/java/com/example/dss7eurekav1/Dss7EurekaV1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS7-EUREKA-V1/src/main/java/com/example/dss7eurekav1/Dss7EurekaV1Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +112,7 @@
       <workItem from="1666674941601" duration="8332000" />
       <workItem from="1666748323198" duration="6116000" />
       <workItem from="1666849016529" duration="5320000" />
-      <workItem from="1666921735135" duration="8344000" />
+      <workItem from="1666921735135" duration="9838000" />
     </task>
     <servers />
   </component>
