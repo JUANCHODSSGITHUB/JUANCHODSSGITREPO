@@ -18,7 +18,7 @@ public class MovieController {
     private MovieService movieService;
 
     @GetMapping("/movie/title?={movieTitle}")
-    public List<Movie> getMovieByTitle (@PathVariable String movieTitle){
+    public List<Movie> getMoviesByTitle (@PathVariable String movieTitle){
         List<Movie> movies = null;
         movies = movieService.getMoviesByTitle(movieTitle);
         return movies;
@@ -26,7 +26,7 @@ public class MovieController {
 
 
     @GetMapping("/movie/year?={movieYear}")
-    public List<Movie> getMovieByTitle (@PathVariable int movieYear){
+    public List<Movie> getMoviesByYear (@PathVariable int movieYear){
         List<Movie> movies = null;
         movies = movieService.getMoviesByYear(movieYear);
         return movies;

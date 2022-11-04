@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38c97e7f-28b9-43ec-98c6-35bdcab63952" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_9_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/Dss4MsMovieV1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/Dss4MsMovieV1Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/repository/MovieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/service/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/service/MovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/example/dss6msreviewv1/Dss6MsReviewV1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/Dss6MsReviewV1Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/test/java/com/example/dss6msreviewv1/Dss6MsReviewV1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/test/java/com/dss/dss6msreviewv1/Dss6MsReviewV1ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +80,7 @@
       <recent name="com.example.dss4msmoviev1.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Dss5MsActorV1Application">
+  <component name="RunManager" selected="Spring Boot.Dss6MsReviewV1Application">
     <configuration name="Dss1UiV1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="DSS1-UI-V1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dss1uiv1.Dss1UiV1Application" />
@@ -133,8 +127,9 @@
       </method>
     </configuration>
     <configuration name="Dss6MsReviewV1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="DSS6-MS-REVIEW-V1" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dss6msreviewv1.Dss6MsReviewV1Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dss.dss6msreviewv1.Dss6MsReviewV1Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,7 +159,7 @@
       <workItem from="1667352863425" duration="4381000" />
       <workItem from="1667439211368" duration="11624000" />
       <workItem from="1667463873052" duration="1286000" />
-      <workItem from="1667466420665" duration="38623000" />
+      <workItem from="1667466420665" duration="46373000" />
     </task>
     <servers />
   </component>
