@@ -1,39 +1,23 @@
-package com.dss.dss4msmoviev1.entity;
+package com.dss.dss4msmoviev1.dto;
+
+import com.dss.dss4msmoviev1.entity.Movie;
 
 import javax.persistence.*;
 import java.util.Set;
 
-@Table(name = "ACTORS")
-@Entity
-public class Actor {
-    @Id
-    @Column(name = "actor_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class ActorDTO {
     private int actorId;
 
-    @Column(name="FIRST_NAME", nullable = false)
     private String firstName;
 
-    @Column(name="LAST_NAME", nullable = false)
     private String lastName;
 
-    @Column(name="AGE", nullable = false)
     private int age;
 
-    @Column(name="GENDER", nullable = false)
     private char gender;
 
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(
-             name = "actor_movie",
-             joinColumns = @JoinColumn(name = "actor_id"),
-             inverseJoinColumns = @JoinColumn(name = "movie_id"))
-    private Set<Movie> movies;
 
-    public Actor() {
-    }
-
-    public Actor(int actorId, String firstName, String lastName, int age, char gender) {
+    public ActorDTO(int actorId, String firstName, String lastName, int age, char gender, Set<Movie> movies) {
         this.actorId = actorId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -49,7 +33,6 @@ public class Actor {
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
-                ", movies=" + movies +
                 '}';
     }
 
@@ -93,11 +76,4 @@ public class Actor {
         this.gender = gender;
     }
 
-    public Set<Movie> getMovies() {
-        return movies;
-    }
-
-    public void setMovies(Set<Movie> movies) {
-        this.movies = movies;
-    }
 }

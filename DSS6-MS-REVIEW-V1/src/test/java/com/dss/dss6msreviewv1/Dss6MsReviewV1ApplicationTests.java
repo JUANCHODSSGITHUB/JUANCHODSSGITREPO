@@ -1,4 +1,4 @@
-package com.example.dss6msreviewv1;
+package com.dss.dss6msreviewv1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

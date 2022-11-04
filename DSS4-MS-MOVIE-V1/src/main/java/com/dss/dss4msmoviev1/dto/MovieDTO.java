@@ -1,45 +1,26 @@
-package com.dss.dss4msmoviev1.entity;
+package com.dss.dss4msmoviev1.dto;
 
-
-import com.dss.dss4msmoviev1.dto.ActorDTO;
+import com.dss.dss4msmoviev1.entity.Actor;
 
 import javax.persistence.*;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
-
-@Table(name="MOVIES")
-@Entity
-public class Movie {
-    @Id
-    @GeneratedValue
-    @Column(name = "movie_id")
+public class MovieDTO {
     private int movieId;
 
-    @Column(name = "movie_title", nullable = false)
     private String movieTitle;
 
-    @Column(name="movie_image", nullable=false)
     private String movieImage;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
-    @JoinTable(
-            name = "actor_movie",
-            joinColumns = {@JoinColumn(name = "actor_id")},
-            inverseJoinColumns = {@JoinColumn(name = "movie_id")}
-    )
-    Set<Actor> actors = new HashSet<>();
+    Set<ActorDTO> actors = new HashSet<>();
 
-    @Column(name="movie_cost")
     private int movieCost;
 
-
-    @Column(name="movie_year", nullable = false)
     private int movieYear;
 
-    public Movie() {
-    }
 
-    public Movie(int movieId, String movieTitle, String movieImage, Set<Actor> actors, int movieCost, int movieYear) {
+    public MovieDTO(int movieId, String movieTitle, String movieImage, Set<ActorDTO> actors, int movieCost, int movieYear) {
         this.movieId = movieId;
         this.movieTitle = movieTitle;
         this.movieImage = movieImage;
@@ -84,11 +65,11 @@ public class Movie {
         this.movieImage = movieImage;
     }
 
-    public Set<Actor> getActors() {
+    public Set<ActorDTO> getActors() {
         return actors;
     }
 
-    public void setActors(Set<Actor> actors) {
+    public void setActors(Set<ActorDTO> actors) {
         this.actors = actors;
     }
 

@@ -1,4 +1,4 @@
-package com.example.dss6msreviewv1;
+package com.dss.dss6msreviewv1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
