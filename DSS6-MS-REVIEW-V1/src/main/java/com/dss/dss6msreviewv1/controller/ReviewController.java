@@ -16,8 +16,6 @@ public class ReviewController {
     @Autowired
     private ReviewService reviewService;
 
-
-
     @GetMapping("/review/{id}")
     public Review getReview(@PathVariable int id){
        Review Review = reviewService.viewReviewById(id);
@@ -30,20 +28,25 @@ public class ReviewController {
         return reviewList;
     }
 
-    @GetMapping("/review/movie-id?={id}")
+    @GetMapping("/review/movie-id/{id}")
     public List<Review> getReviewsByMovieId(@PathVariable int id){
         List reviewList = reviewService.viewReviewsByMovieId(id);
         return reviewList;
     }
 
     @DeleteMapping("/review/{id}")
-    public String delete(@PathVariable int id){
+    public String deleteReview(@PathVariable int id){
         return reviewService.deleteReview(id);
     }
 
-    @PostMapping("/course")
-    public Review insert(@RequestBody ReviewDTO reviewDTO){
+    @PostMapping("/review")
+    public Review insertReview(@RequestBody ReviewDTO reviewDTO){
         return reviewService.addReview(reviewDTO);
+    }
+
+    @PutMapping("/review/{id}")
+    public String updateReview(@PathVariable int id, @RequestBody ReviewDTO reviewDTO){
+        return reviewService.updateReview(id, reviewDTO);
     }
 
 

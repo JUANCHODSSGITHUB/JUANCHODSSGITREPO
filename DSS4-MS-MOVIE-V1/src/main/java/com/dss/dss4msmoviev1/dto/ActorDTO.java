@@ -1,12 +1,13 @@
 package com.dss.dss4msmoviev1.dto;
 
 import com.dss.dss4msmoviev1.entity.Movie;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
 import java.util.Set;
 
 public class ActorDTO {
-    private int actorId;
+
 
     private String firstName;
 
@@ -17,8 +18,7 @@ public class ActorDTO {
     private char gender;
 
 
-    public ActorDTO(int actorId, String firstName, String lastName, int age, char gender, Set<Movie> movies) {
-        this.actorId = actorId;
+    public ActorDTO(String firstName, String lastName, int age, char gender, Set<Movie> movies) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -28,21 +28,13 @@ public class ActorDTO {
     @Override
     public String toString() {
         return "Actor{" +
-                "actorId=" + actorId +
-                ", firstName='" + firstName + '\'' +
+                "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
                 '}';
     }
 
-    public int getActorId() {
-        return actorId;
-    }
-
-    public void setActorId(int actorId) {
-        this.actorId = actorId;
-    }
 
     public String getFirstName() {
         return firstName;

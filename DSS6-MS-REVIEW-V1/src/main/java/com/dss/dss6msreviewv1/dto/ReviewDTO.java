@@ -1,10 +1,11 @@
 package com.dss.dss6msreviewv1.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Column;
 import java.util.Date;
 
 public class ReviewDTO {
-    private int reviewId;
 
     private int movieId;
     private String description;
@@ -16,8 +17,7 @@ public class ReviewDTO {
     public ReviewDTO() {
     }
 
-    public ReviewDTO(int reviewId, int movieId, String description, Date datePosted, int rating) {
-        this.reviewId = reviewId;
+    public ReviewDTO( int movieId, String description, Date datePosted, int rating) {
         this.movieId = movieId;
         this.description = description;
         this.datePosted = datePosted;
@@ -27,21 +27,13 @@ public class ReviewDTO {
     @Override
     public String toString() {
         return "Review{" +
-                "reviewId=" + reviewId +
-                ", movieId=" + movieId +
+                " movieId=" + movieId +
                 ", description='" + description + '\'' +
                 ", datePosted=" + datePosted +
                 ", rating=" + rating +
                 '}';
     }
 
-    public int getReviewId() {
-        return reviewId;
-    }
-
-    public void setReviewId(int reviewId) {
-        this.reviewId = reviewId;
-    }
 
     public int getMovieId() {
         return movieId;

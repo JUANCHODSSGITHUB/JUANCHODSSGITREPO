@@ -1,13 +1,13 @@
 package com.dss.dss4msmoviev1.dto;
 
 import com.dss.dss4msmoviev1.entity.Actor;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
 public class MovieDTO {
-    private int movieId;
 
     private String movieTitle;
 
@@ -20,8 +20,7 @@ public class MovieDTO {
     private int movieYear;
 
 
-    public MovieDTO(int movieId, String movieTitle, String movieImage, Set<ActorDTO> actors, int movieCost, int movieYear) {
-        this.movieId = movieId;
+    public MovieDTO(String movieTitle, String movieImage, Set<ActorDTO> actors, int movieCost, int movieYear) {
         this.movieTitle = movieTitle;
         this.movieImage = movieImage;
         this.actors = actors;
@@ -32,8 +31,7 @@ public class MovieDTO {
     @Override
     public String toString() {
         return "Movie{" +
-                "movieId=" + movieId +
-                ", movieTitle='" + movieTitle + '\'' +
+                "movieTitle='" + movieTitle + '\'' +
                 ", movieImage='" + movieImage + '\'' +
                 ", actors=" + actors +
                 ", movieCost=" + movieCost +
@@ -41,13 +39,6 @@ public class MovieDTO {
                 '}';
     }
 
-    public int getMovieId() {
-        return movieId;
-    }
-
-    public void setMovieId(int movieId) {
-        this.movieId = movieId;
-    }
 
     public String getMovieTitle() {
         return movieTitle;

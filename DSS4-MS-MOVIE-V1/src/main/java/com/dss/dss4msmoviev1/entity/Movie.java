@@ -39,14 +39,15 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie(int movieId, String movieTitle, String movieImage, Set<Actor> actors, int movieCost, int movieYear) {
-        this.movieId = movieId;
+    public Movie(String movieTitle, String movieImage, Set<Actor> actors, int movieCost, int movieYear) {
         this.movieTitle = movieTitle;
         this.movieImage = movieImage;
         this.actors = actors;
         this.movieCost = movieCost;
         this.movieYear = movieYear;
     }
+
+
 
     @Override
     public String toString() {

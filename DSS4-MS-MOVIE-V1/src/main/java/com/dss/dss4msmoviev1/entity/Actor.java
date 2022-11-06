@@ -1,5 +1,7 @@
 package com.dss.dss4msmoviev1.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -22,19 +24,18 @@ public class Actor {
 
     @Column(name="GENDER", nullable = false)
     private char gender;
-
+   /* @JsonIgnore
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
              name = "actor_movie",
              joinColumns = @JoinColumn(name = "actor_id"),
              inverseJoinColumns = @JoinColumn(name = "movie_id"))
-    private Set<Movie> movies;
+    private Set<Movie> movies;*/
 
     public Actor() {
     }
 
-    public Actor(int actorId, String firstName, String lastName, int age, char gender) {
-        this.actorId = actorId;
+    public Actor(String firstName, String lastName, int age, char gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -49,7 +50,7 @@ public class Actor {
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
-                ", movies=" + movies +
+                //", movies=" + movies +
                 '}';
     }
 
@@ -92,7 +93,7 @@ public class Actor {
     public void setGender(char gender) {
         this.gender = gender;
     }
-
+/*
     public Set<Movie> getMovies() {
         return movies;
     }
@@ -100,4 +101,6 @@ public class Actor {
     public void setMovies(Set<Movie> movies) {
         this.movies = movies;
     }
+
+ */
 }

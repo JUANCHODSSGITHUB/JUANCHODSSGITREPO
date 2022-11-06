@@ -99,6 +99,8 @@ public class MovieServiceImpl implements MovieService{
             if((year - movieFound.getMovieYear()) >= 1){
                 movieRepository.deleteById(movieId);
                 responseMessage = "Data successfully deleted.";
+            }else{
+                responseMessage = "Can't delete movie entry.";
             }
         }catch(EmptyResultDataAccessException | NoSuchElementException e){
             responseMessage = "No such data with id = " + movieId + ".";
