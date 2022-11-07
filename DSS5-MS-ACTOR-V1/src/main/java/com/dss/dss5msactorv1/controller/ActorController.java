@@ -22,6 +22,13 @@ public class ActorController {
         return actor;
     }
 
+    @GetMapping("/actor/first-name/{firstName}")
+    public List<Actor> getByName(@PathVariable String firstName){
+        List<Actor> actor = null;
+        actor = actorService.findActorByFirstName(firstName);
+        return actor;
+    }
+
     @GetMapping("/actor")
     public List<Actor> get(){
         List actorList = actorService.findAllActors();
@@ -37,6 +44,11 @@ public class ActorController {
     @PostMapping("/actor")
     public String insert(@RequestBody Actor actor){
         return actorService.addActor(actor);
+    }
+
+    @PutMapping("/actor")
+    public String update(@RequestBody Actor actor){
+        return actorService.updateActor(actor);
     }
 }
 

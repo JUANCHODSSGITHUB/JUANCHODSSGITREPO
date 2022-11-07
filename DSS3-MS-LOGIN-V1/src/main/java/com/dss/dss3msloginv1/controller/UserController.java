@@ -13,7 +13,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-
     @PostMapping("/user")
     public String registerAccount(@RequestBody UserDTO user){
         return userService.addUser(user);
@@ -29,7 +28,7 @@ public class UserController {
         return userService.authenticate(id, password);
     }
 
-    @PutMapping("/user/changePassword")
+    @PutMapping("/user/change-password")
     public String changePassword(@RequestHeader ("username") String id, @RequestHeader ("password1") String password1, @RequestHeader ("password2") String password2){
         return userService.changePassword(id, password1, password2);
     }

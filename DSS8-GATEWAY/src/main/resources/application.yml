@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+eureka:
+  instance:
+    hostname: localhost
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: USER-OPERATIONS-SERVICE
+          uri: http://localhost:9005/
+          predicates:
+            - Path=/dss/api/user/**
+        - id: ACTOR-OPERATIONS-SERVICE
+          uri: http://localhost:9006/
+          predicates:
+            - Path=/dss/api/actor/**
+        - id: MOVIE-OPERATIONS-SERVICE
+          uri: http://localhost:9007/
+          predicates:
+            - Path=/dss/api/movie/**
+        - id: REVIEW-OPERATIONS-SERVICE
+          uri: http://localhost:9008/
+          predicates:
+            - Path=/dss/api/review/**

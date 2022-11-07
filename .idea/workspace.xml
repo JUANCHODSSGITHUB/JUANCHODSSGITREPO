@@ -5,19 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38c97e7f-28b9-43ec-98c6-35bdcab63952" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_classes_macos_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_core_1_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_http_1_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_test_3_4_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_gateway_server_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_gateway_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_3_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/ActorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/ActorDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/MovieDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/MovieDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/util/MovieDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/util/MovieDTOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/service/MovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/dto/ReviewDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/dto/ReviewDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/dto/ReviewDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/dto/ReviewDTOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/entity/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/controller/ActorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/controller/ActorController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,37 +132,7 @@
       <recent name="com.example.dss4msmoviev1.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Dss6MsReviewV1Application">
-    <configuration name="Dss3MsLoginV1ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DSS3-MS-LOGIN-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dss.dss3msloginv1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dss.dss3msloginv1" />
-      <option name="MAIN_CLASS_NAME" value="com.dss.dss3msloginv1.Dss3MsLoginV1ApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDTOValidationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DSS3-MS-LOGIN-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dss.dss3msloginv1.inputValidation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dss.dss3msloginv1.inputValidation" />
-      <option name="MAIN_CLASS_NAME" value="com.dss.dss3msloginv1.inputValidation.UserDTOValidationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.Dss8GatewayApplication">
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DSS3-MS-LOGIN-V1" />
       <extension name="coverage">
@@ -159,6 +175,38 @@
       <option name="PACKAGE_NAME" value="com.dss.dss3msloginv1.service" />
       <option name="MAIN_CLASS_NAME" value="com.dss.dss3msloginv1.service.UserServiceTest" />
       <option name="METHOD_NAME" value="incorrectPassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.successfulRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSS3-MS-LOGIN-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dss.dss3msloginv1.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dss.dss3msloginv1.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dss.dss3msloginv1.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="successfulRegistration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.unsuccessfulRegistration2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSS3-MS-LOGIN-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dss.dss3msloginv1.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dss.dss3msloginv1.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dss.dss3msloginv1.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="unsuccessfulRegistration2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -217,13 +265,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dss8GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="DSS8-GATEWAY" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dss.dss8gateway.Dss8GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDTOValidationTest" />
-        <item itemvalue="JUnit.UserServiceTest.incorrectPassword" />
         <item itemvalue="JUnit.UserServiceTest.correctPassword" />
+        <item itemvalue="JUnit.UserServiceTest.incorrectPassword" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.Dss3MsLoginV1ApplicationTests" />
+        <item itemvalue="JUnit.UserServiceTest.successfulRegistration" />
+        <item itemvalue="JUnit.UserServiceTest.unsuccessfulRegistration2" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +300,7 @@
       <workItem from="1667439211368" duration="11624000" />
       <workItem from="1667463873052" duration="1286000" />
       <workItem from="1667466420665" duration="52991000" />
-      <workItem from="1667741713492" duration="12268000" />
+      <workItem from="1667741713492" duration="23806000" />
     </task>
     <servers />
   </component>
@@ -269,14 +324,38 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java</url>
+          <line>30</line>
+          <properties class="com.dss.dss3msloginv1.service.UserServiceTest" method="incorrectPassword">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java</url>
+          <line>110</line>
+          <properties class="com.dss.dss3msloginv1.service.UserServiceTest" method="successfulRegistration">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/JUANCHODSSGITREPO$UserDTOValidationTest.ic" NAME="UserDTOValidationTest Coverage Results" MODIFIED="1667562438082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.dss.dss3msloginv1.inputValidation.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/JUANCHODSSGITREPO$Dss3MsLoginV1ApplicationTests.ic" NAME="Dss3MsLoginV1ApplicationTests Coverage Results" MODIFIED="1667562505726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/JUANCHODSSGITREPO$Dss3MsLoginV1ApplicationTests.ic" NAME="Dss3MsLoginV1ApplicationTests Coverage Results" MODIFIED="1667787797579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.dss.dss3msloginv1.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/JUANCHODSSGITREPO$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1667563963414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/JUANCHODSSGITREPO$UserDTOValidationTest.ic" NAME="UserDTOValidationTest Coverage Results" MODIFIED="1667787931292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dss.dss3msloginv1.inputValidation.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JUANCHODSSGITREPO$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1667787750067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.dss.dss3msloginv1.service.*</FILTER>
     </SUITE>
   </component>

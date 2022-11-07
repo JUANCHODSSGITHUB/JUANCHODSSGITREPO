@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/DSS5-MS-ACTOR-V1/DSS5-MS-ACTOR-V1.iml" filepath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/DSS5-MS-ACTOR-V1.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSS6-MS-REVIEW-V1/DSS6-MS-REVIEW-V1.iml" filepath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/DSS6-MS-REVIEW-V1.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSS7-EUREKA-V1/DSS7-EUREKA-V1.iml" filepath="$PROJECT_DIR$/DSS7-EUREKA-V1/DSS7-EUREKA-V1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSS8-GATEWAY/DSS8-GATEWAY.iml" filepath="$PROJECT_DIR$/DSS8-GATEWAY/DSS8-GATEWAY.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JUANCHODSSGITREPO.iml" filepath="$PROJECT_DIR$/.idea/JUANCHODSSGITREPO.iml" />
     </modules>
   </component>

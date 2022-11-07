@@ -3,10 +3,9 @@ package com.dss.dss3msloginv1.service;
 
 import com.dss.dss3msloginv1.dto.UserDTO;
 import com.dss.dss3msloginv1.entity.User;
-import com.dss.dss3msloginv1.inputValidation.UserDTOValidationTest;
 import com.dss.dss3msloginv1.repository.UserRepository;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +16,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.Optional;
 
 @RunWith(SpringRunner.class)
-@Import(UserDTOValidationTest.class)
+@Import(UserServiceTestConfig.class)
 public class UserServiceTest {
+
 
     @MockBean
     private UserRepository userRepository;
@@ -36,9 +36,8 @@ public class UserServiceTest {
                 , "Meneses"
                 , "09212102824");
 
-        Mockito.when(userRepository.findByUserId(user.getUserId())).thenReturn(user);
+        Mockito.when(userRepository.save(user)).thenReturn(user);
 
-        //fail because of null password
         String username = "jrvm";
         String password = "Password!";
 
@@ -54,16 +53,16 @@ public class UserServiceTest {
                 , "Meneses"
                 , "09212102824");
 
-        Mockito.when(userRepository.findByUserId(user.getUserId())).thenReturn(user);
+        Mockito.when(userRepository.save(user)).thenReturn(user);
 
-        //fail because of null password
+
         String username = "jrvm";
         String password = "Passw0rd!";
 
         Assertions.assertTrue(userService.authenticate(username, password));
     }
 
-/*
+
     @Test
     public void unsuccessfulRegistration() {
         //username already exists
@@ -74,7 +73,7 @@ public class UserServiceTest {
                 , "Meneses"
                 , "09212102824");
 
-        Mockito.when(userRepository.save(user));
+        Mockito.when(userRepository.save(user)).thenReturn(user);
 
         UserDTO userDTO = new UserDTO("jrvm"
                 , "Passw0rd!"
@@ -83,7 +82,7 @@ public class UserServiceTest {
                 , "Meneses"
                 , "09212102828");
 
-        Assertions.assertEquals(userService.addUser(userDTO), "Username/email already exists.");
+        Assertions.assertEquals("Username/email already exists.",userService.addUser(userDTO));
     }
 
     @Test
@@ -96,7 +95,7 @@ public class UserServiceTest {
                 , "Meneses"
                 , "09212102824");
 
-        Mockito.when(userRepository.save(user));
+        Mockito.when(userRepository.save(user)).thenReturn(user);
 
         UserDTO userDTO = new UserDTO("jrvm2"
                 , "Passw0rd!"
@@ -105,7 +104,7 @@ public class UserServiceTest {
                 , "Meneses"
                 , "09212102824");
 
-        Assertions.assertEquals(userService.addUser(userDTO), "Phone number is already registered.");
+        Assertions.assertEquals("Phone number is already registered.", userService.addUser(userDTO));
     }
 
     @Test
@@ -117,7 +116,7 @@ public class UserServiceTest {
                 , "Meneses"
                 , "09212102824");
 
-        Mockito.when(userRepository.save(user));
+        Mockito.when(userRepository.save(user)).thenReturn(user);
 
         UserDTO userDTO = new UserDTO("jrvm2"
                 , "Passw0rd!"
@@ -126,6 +125,6 @@ public class UserServiceTest {
                 , "Meneses"
                 , "09212102828");
 
-        Assertions.assertEquals(userService.addUser(userDTO), "Account successfully registered.");
-    }*/
+        Assertions.assertEquals("Account successfully registered.", userService.addUser(userDTO));
+    }
 }
