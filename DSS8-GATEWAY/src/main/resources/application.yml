@@ -15,10 +15,6 @@ spring:
           uri: http://localhost:9005/
           predicates:
             - Path=/dss/api/user/**
-        - id: ACTOR-OPERATIONS-SERVICE
-          uri: http://localhost:9006/
-          predicates:
-            - Path=/dss/api/actor/**
         - id: MOVIE-OPERATIONS-SERVICE
           uri: http://localhost:9007/
           predicates:

@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38c97e7f-28b9-43ec-98c6-35bdcab63952" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/util/UserDTOMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/dto/util/UserDTOChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/util/UserDTOChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/dto/util/UserDTOMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/controller/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/inputValidation/UserDTOValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/inputValidation/UserDTOValidationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/util/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/util/TokenUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS8-GATEWAY/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS8-GATEWAY/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS8-GATEWAY/src/main/java/com/dss/dss8gateway/Dss8GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS8-GATEWAY/src/main/java/com/dss/dss8gateway/Dss8GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS8-GATEWAY/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DSS8-GATEWAY/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS8-GATEWAY/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS8-GATEWAY/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +65,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "05be4376a690e863d0e6462a84e41d93"
   },
@@ -103,7 +97,7 @@
       <recent name="com.example.dss4msmoviev1.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.unsuccessfulDeletion">
+  <component name="RunManager" selected="Spring Boot.Dss8GatewayApplication">
     <configuration name="UserServiceTest.successfulChangePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DSS3-MS-LOGIN-V1" />
       <extension name="coverage">
@@ -277,7 +271,7 @@
       <workItem from="1667956511398" duration="5901000" />
       <workItem from="1668043977318" duration="13542000" />
       <workItem from="1668126232798" duration="2411000" />
-      <workItem from="1668389388730" duration="63218000" />
+      <workItem from="1668389388730" duration="78305000" />
     </task>
     <servers />
   </component>
@@ -339,6 +333,31 @@
           <url>file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java</url>
           <line>62</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DSS8-GATEWAY/src/main/java/com/dss/dss8gateway/filter/JwtAuthenticationFilter.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DSS8-GATEWAY/src/main/java/com/dss/dss8gateway/filter/JwtAuthenticationFilter.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DSS8-GATEWAY/src/main/java/com/dss/dss8gateway/filter/JwtAuthenticationFilter.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DSS8-GATEWAY/src/main/java/com/dss/dss8gateway/util/JwtUtil.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DSS8-GATEWAY/src/main/java/com/dss/dss8gateway/util/JwtUtil.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

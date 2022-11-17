@@ -9,7 +9,7 @@ public interface UserService {
 
     String addUser(UserDTO user);
 
-    Boolean authenticate(String userName, String password);
+    String authenticate(String userName, String password);
 
     String deleteUser(String id);
 
@@ -19,7 +19,7 @@ public interface UserService {
         MessageDigest messageDigest;
         String hashedPassword = null;
         try {
-            messageDigest = MessageDigest.getInstance("SHA-512");
+            messageDigest = MessageDigest.getInstance("MD5");
             byte[] passwordInBytes = password.getBytes();
             messageDigest.update(passwordInBytes);
             byte[] resultByteArray = messageDigest.digest();

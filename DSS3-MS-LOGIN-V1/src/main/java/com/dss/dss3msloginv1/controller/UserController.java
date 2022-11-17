@@ -25,7 +25,7 @@ public class UserController {
     }
 
     @PostMapping("/user/login")
-    public ResponseEntity<Boolean> authenticateUser(@RequestHeader ("username") String id, @RequestHeader ("password") String password){
+    public ResponseEntity<String> authenticateUser(@RequestHeader ("username") String id, @RequestHeader ("password") String password){
         return new ResponseEntity<>(userService.authenticate(id, password), HttpStatus.OK);
     }
 

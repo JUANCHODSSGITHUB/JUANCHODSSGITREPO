@@ -22,6 +22,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private TokenUtil tokenUtil;
+
 
     @Override
     public String addUser(UserDTO user) {
@@ -64,13 +67,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Boolean authenticate(String login, String password) {
+    public String authenticate(String login, String password) {
         String hashedPassword = UserService.encryptPassword(password);
         User accountById = userRepository.findByUserIdAndPassword(login, hashedPassword);
         User accountByEmail = userRepository.findByEmailAndPassword(login, hashedPassword);
         if (accountById != null || accountByEmail != null) {
-
-           return true;
+           return tokenUtil.generateToken((accountById != null) ? accountById : accountByEmail);
         }else{
             throw new LoginFailedException("Incorrect username/password.");
         }
@@ -78,13 +80,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String deleteUser(String id){
+    public String deleteUser(String id) throws UserNotFoundException {
         String responseMessage = null;
         try {
             userRepository.deleteById(id);
             responseMessage = "Data successfully deleted.";
+
         } catch (EmptyResultDataAccessException e) {
             responseMessage = "No such account with username = " + id + ".";
+            throw new UserNotFoundException(responseMessage);
         }
         return responseMessage;
     }
