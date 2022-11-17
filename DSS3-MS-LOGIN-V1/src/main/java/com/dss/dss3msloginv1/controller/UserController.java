@@ -1,9 +1,10 @@
 package com.dss.dss3msloginv1.controller;
 
 import com.dss.dss3msloginv1.dto.UserDTO;
-import com.dss.dss3msloginv1.entity.User;
 import com.dss.dss3msloginv1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,22 +15,23 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/user")
-    public String registerAccount(@RequestBody UserDTO user){
-        return userService.addUser(user);
+    public ResponseEntity<String> registerAccount(@RequestBody UserDTO user){
+        return new ResponseEntity<>(userService.addUser(user), HttpStatus.CREATED);
     }
 
     @DeleteMapping("/user/{id}")
-    public String deleteAccount(@PathVariable String id){
-        return userService.deleteUser(id);
+    public ResponseEntity<String> deleteAccount(@PathVariable String id){
+        return new ResponseEntity<>(userService.deleteUser(id), HttpStatus.OK);
     }
 
     @PostMapping("/user/login")
-    public Boolean authenticateUser(@RequestHeader ("username") String id, @RequestHeader ("password") String password){
-        return userService.authenticate(id, password);
+    public ResponseEntity<Boolean> authenticateUser(@RequestHeader ("username") String id, @RequestHeader ("password") String password){
+        return new ResponseEntity<>(userService.authenticate(id, password), HttpStatus.OK);
     }
 
     @PutMapping("/user/change-password")
-    public String changePassword(@RequestHeader ("username") String id, @RequestHeader ("password1") String password1, @RequestHeader ("password2") String password2){
-        return userService.changePassword(id, password1, password2);
+    public ResponseEntity<String> changePassword(@RequestHeader ("username") String id, @RequestHeader ("password1") String password1, @RequestHeader ("password2") String password2){
+        return new ResponseEntity<>(userService.changePassword(id, password1, password2), HttpStatus.OK);
     }
+
 }

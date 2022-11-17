@@ -1,7 +1,5 @@
 package com.dss.dss3msloginv1.dto;
 
-import javax.persistence.Column;
-
 public class UserDTO {
 
     private String loginId;

@@ -78,9 +78,6 @@ public class User {
         return userId;
     }
 
-    public void setUserId(String loginId) {
-        this.userId = userId;
-    }
 
     public String getPassword() {
         return password;

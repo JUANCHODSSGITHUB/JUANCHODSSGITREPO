@@ -1,7 +1,6 @@
 package com.dss.dss3msloginv1.service;
 
 import com.dss.dss3msloginv1.dto.UserDTO;
-import com.dss.dss3msloginv1.entity.User;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -20,7 +19,7 @@ public interface UserService {
         MessageDigest messageDigest;
         String hashedPassword = null;
         try {
-            messageDigest = MessageDigest.getInstance("MD5");
+            messageDigest = MessageDigest.getInstance("SHA-512");
             byte[] passwordInBytes = password.getBytes();
             messageDigest.update(passwordInBytes);
             byte[] resultByteArray = messageDigest.digest();
@@ -32,7 +31,6 @@ public interface UserService {
             hashedPassword = stringBuilder.toString();
 
         } catch (NoSuchAlgorithmException e) {
-            System.out.println("No Such Algorithm....");
             throw new RuntimeException(e);
         }
         return hashedPassword;

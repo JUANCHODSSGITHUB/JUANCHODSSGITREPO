@@ -19,7 +19,7 @@
     <bytecodeTargetLevel>
       <module name="DSS1-UI-V1" target="1.8" />
       <module name="DSS2-REST-BE-V1" target="1.8" />
-      <module name="DSS3-MS-LOGIN-V1" target="1.8" />
+      <module name="DSS3-MS-LOGIN-V1" target="11" />
       <module name="DSS4-MS-MOVIE-V1" target="1.8" />
       <module name="DSS5-MS-ACTOR-V1" target="1.8" />
       <module name="DSS6-MS-REVIEW-V1" target="1.8" />
