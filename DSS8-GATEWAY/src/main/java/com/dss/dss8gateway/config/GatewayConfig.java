@@ -15,7 +15,7 @@ public class GatewayConfig {
 
     @Bean
     public RouteLocator routes(RouteLocatorBuilder builder) {
-        return builder.routes().route("ACTOR-OPERATIONS-SERVICE", r -> r.path("/dss/api/actor/**").filters(f -> f.filter(filter)).uri("http://localhost:9006/")).build();
+        return builder.routes().route("ACTOR-OPERATIONS-SERVICE", r -> r.path("/dss/api/actor/**").filters(f -> f.filter(filter)).uri("lb://ACTOR-OPERATIONS-SERVICE")) .build();
                /* .route("alert", r -> r.path("/alert/**").filters(f -> f.filter(filter)).uri("lb://alert"))
                 .route("echo", r -> r.path("/echo/**").filters(f -> f.filter(filter)).uri("lb://echo"))
                 .route("hello", r -> r.path("/hello/**").filters(f -> f.filter(filter)).uri("lb://hello")).build();*/
