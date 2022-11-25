@@ -31,7 +31,7 @@ public interface UserService {
             hashedPassword = stringBuilder.toString();
 
         } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
+            throw new NullPointerException(e.getMessage());
         }
         return hashedPassword;
     }

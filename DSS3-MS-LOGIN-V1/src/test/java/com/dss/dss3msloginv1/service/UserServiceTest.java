@@ -22,7 +22,7 @@ import java.util.Optional;
 
 @RunWith(SpringRunner.class)
 @Import(UserServiceTestConfig.class)
-public class UserServiceTest {
+class UserServiceTest {
 
 
     @MockBean

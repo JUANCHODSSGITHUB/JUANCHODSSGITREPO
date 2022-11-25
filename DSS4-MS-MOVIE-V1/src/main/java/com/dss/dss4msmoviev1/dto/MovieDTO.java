@@ -1,9 +1,5 @@
 package com.dss.dss4msmoviev1.dto;
 
-import com.dss.dss4msmoviev1.entity.Actor;
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,6 +15,8 @@ public class MovieDTO {
 
     private int movieYear;
 
+    public MovieDTO() {
+    }
 
     public MovieDTO(String movieTitle, String movieImage, Set<ActorDTO> actors, int movieCost, int movieYear) {
         this.movieTitle = movieTitle;

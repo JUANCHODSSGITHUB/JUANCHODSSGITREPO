@@ -24,13 +24,14 @@ public class Actor {
 
     @Column(name="GENDER", nullable = false)
     private char gender;
-   /* @JsonIgnore
+
+    @JsonIgnore
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
              name = "actor_movie",
              joinColumns = @JoinColumn(name = "actor_id"),
              inverseJoinColumns = @JoinColumn(name = "movie_id"))
-    private Set<Movie> movies;*/
+    private Set<Movie> movies;
 
     public Actor() {
     }
@@ -50,7 +51,6 @@ public class Actor {
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
-                //", movies=" + movies +
                 '}';
     }
 
@@ -93,14 +93,5 @@ public class Actor {
     public void setGender(char gender) {
         this.gender = gender;
     }
-/*
-    public Set<Movie> getMovies() {
-        return movies;
-    }
 
-    public void setMovies(Set<Movie> movies) {
-        this.movies = movies;
-    }
-
- */
 }

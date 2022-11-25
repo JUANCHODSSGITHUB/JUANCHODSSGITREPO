@@ -2,8 +2,6 @@ package com.dss.dss3msloginv1.util;
 import com.dss.dss3msloginv1.entity.User;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -20,7 +18,7 @@ import java.util.Date;
 
             return Jwts.builder()
                     .setIssuer("User Service")
-                    .setSubject(user.getUserId().toString())
+                    .setSubject(user.getUserId())
                     .setIssuedAt(issueTime)
                     .setExpiration(expiryTime)
                     .claim("user", user.getEmail())

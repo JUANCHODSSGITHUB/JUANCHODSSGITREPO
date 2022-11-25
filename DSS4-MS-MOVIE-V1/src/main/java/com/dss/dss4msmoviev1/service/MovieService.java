@@ -1,6 +1,7 @@
 package com.dss.dss4msmoviev1.service;
 
 import com.dss.dss4msmoviev1.dto.MovieDTO;
+import com.dss.dss4msmoviev1.dto.UpdateMovieDTO;
 import com.dss.dss4msmoviev1.entity.Movie;
 
 import java.util.*;
@@ -20,6 +21,6 @@ public interface MovieService {
 
     String deleteMovie(int movieId);
 
-    String updateMovie(int movieId, MovieDTO movieDTO);
+    String updateMovie(int movieId, UpdateMovieDTO updateMovieDTO);
 
 }

@@ -6,7 +6,7 @@ import com.dss.dss3msloginv1.exception.InvalidInputException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class UserDTOValidationTest {
+class UserDTOValidationTest {
     @Test
     void incorrectPasswordFormatValidation() {
         UserDTO userDTO = new UserDTO("jrvm"

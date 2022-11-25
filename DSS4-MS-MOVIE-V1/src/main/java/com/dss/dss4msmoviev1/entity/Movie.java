@@ -1,8 +1,5 @@
 package com.dss.dss4msmoviev1.entity;
 
-
-import com.dss.dss4msmoviev1.dto.ActorDTO;
-
 import javax.persistence.*;
 import java.util.*;
 
@@ -24,8 +21,8 @@ public class Movie {
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     @JoinTable(
             name = "actor_movie",
-            joinColumns = {@JoinColumn(name = "actor_id")},
-            inverseJoinColumns = {@JoinColumn(name = "movie_id")}
+            joinColumns = {@JoinColumn(name = "movie_id")},
+            inverseJoinColumns = {@JoinColumn(name = "actor_id")}
     )
     Set<Actor> actors = new HashSet<>();
 

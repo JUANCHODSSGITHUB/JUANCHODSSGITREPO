@@ -1,6 +1,6 @@
 create table users(
                       user_id VARCHAR ( 50 ) PRIMARY KEY,
-                      password VARCHAR ( 50 ) NOT NULL,
+                      password VARCHAR ( 255 ) NOT NULL,
                       email VARCHAR ( 255 ) UNIQUE NOT NULL,
                       first_name VARCHAR ( 255 ) NOT NULL,
                       last_name VARCHAR ( 255 ) NOT NULL,
@@ -21,7 +21,7 @@ create table movies(
                        movie_image TEXT NOT NULL,
                        movie_cost INT NOT NULL,
                        movie_year INT NOT NULL,
-                       CONSTRAINT FK_Actor FOREIGN KEY(actor_id) REFERENCES actors(actor_id) ON DELETE SET NULL
+                       CONSTRAINT FK_Actor FOREIGN KEY(actor_id) REFERENCES actors(actor_id) ON DELETE CASCADE
 );
 
 create table reviews(
@@ -30,13 +30,13 @@ create table reviews(
                         description TEXT NOT NULL,
                         date_posted DATE NOT NULL,
                         rating INT NOT NULL,
-                        CONSTRAINT FK_Movie FOREIGN KEY(movie_id) REFERENCES movies(movie_id) ON DELETE SET NULL
+                        CONSTRAINT FK_Movie FOREIGN KEY(movie_id) REFERENCES movies(movie_id) ON DELETE CASCADE
 );
 
 
 CREATE TABLE actor_movie(
                         actor_id int NOT NULL,
                         movie_id int NOT NULL,
-                        CONSTRAINT FK_actor FOREIGN KEY (actor_id) REFERENCES actors(actor_id),
-                        CONSTRAINT FK_movie FOREIGN KEY (movie_id) REFERENCES movies(movie_id)
+                        CONSTRAINT FK_actor FOREIGN KEY (actor_id) REFERENCES actors(actor_id) ON DELETE CASCADE,
+                        CONSTRAINT FK_movie FOREIGN KEY (movie_id) REFERENCES movies(movie_id) ON DELETE CASCADE
 );

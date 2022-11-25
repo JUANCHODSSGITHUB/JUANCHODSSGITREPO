@@ -12,7 +12,7 @@ spring:
     gateway:
       routes:
         - id: USER-OPERATIONS-SERVICE
-          uri: http://localhost:9005/
+          uri: lb://USER-OPERATIONS-SERVICE/
           predicates:
             - Path=/dss/api/user/**
         - id: ACTOR-OPERATIONS-SERVICE

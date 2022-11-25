@@ -1,17 +1,14 @@
 package com.dss.dss3msloginv1.service;
 
 import com.dss.dss3msloginv1.dto.UserDTO;
-import com.dss.dss3msloginv1.util.TokenUtil;
 import com.dss.dss3msloginv1.util.UserDTOChecker;
 import com.dss.dss3msloginv1.util.UserDTOMapper;
 import com.dss.dss3msloginv1.entity.User;
 import com.dss.dss3msloginv1.exception.AdminAlreadyExistsException;
-import com.dss.dss3msloginv1.exception.InvalidInputException;
 import com.dss.dss3msloginv1.exception.LoginFailedException;
 import com.dss.dss3msloginv1.exception.UserNotFoundException;
 import com.dss.dss3msloginv1.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -45,18 +42,6 @@ public class UserServiceImpl implements UserService {
                 responseMessage = "Username/email already exists.";
                 throw new AdminAlreadyExistsException(responseMessage);
             }
-        } else {
-            if (!UserDTOChecker.validateUserDTO(user).isEmpty()) {
-                responseMessage = UserDTOChecker.validateUserDTO(user).get(0);
-                if (!responseMessage.isEmpty()) {
-                    throw new InvalidInputException(responseMessage);
-                }
-            } else if (UserDTOChecker.validateUserDTOPassword(user.getPassword()) != null) {
-                responseMessage = UserDTOChecker.validateUserDTOPassword(user.getPassword());
-                if (!responseMessage.isEmpty()) {
-                    throw new InvalidInputException(responseMessage);
-                }
-            }
         }
 
         return responseMessage;
@@ -80,12 +65,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public String deleteUser(String id){
         String responseMessage = null;
-        try {
+
+        if (userRepository.findByUserId(id) != null){
             userRepository.deleteById(id);
             responseMessage = "Data successfully deleted.";
-        } catch (EmptyResultDataAccessException e) {
+        }else{
             responseMessage = "No such account with username = " + id + ".";
+            throw new UserNotFoundException(responseMessage);
         }
+
         return responseMessage;
     }
 
@@ -110,12 +98,8 @@ public class UserServiceImpl implements UserService {
                 responseMessage = "Incorrect username/password.";
                 throw new LoginFailedException(responseMessage);
             }
-        } else {
-            responseMessage = UserDTOChecker.validateUserDTOPassword(password2);
-            if (responseMessage != null) {
-                throw new InvalidInputException(responseMessage);
-            }
         }
+
             return responseMessage;
     }
 }

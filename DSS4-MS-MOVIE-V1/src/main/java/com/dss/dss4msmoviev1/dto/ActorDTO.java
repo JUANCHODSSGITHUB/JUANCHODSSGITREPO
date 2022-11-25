@@ -1,11 +1,5 @@
 package com.dss.dss4msmoviev1.dto;
 
-import com.dss.dss4msmoviev1.entity.Movie;
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-import javax.persistence.*;
-import java.util.Set;
-
 public class ActorDTO {
 
 
@@ -17,8 +11,10 @@ public class ActorDTO {
 
     private char gender;
 
+    public ActorDTO() {
+    }
 
-    public ActorDTO(String firstName, String lastName, int age, char gender, Set<Movie> movies) {
+    public ActorDTO(String firstName, String lastName, int age, char gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
