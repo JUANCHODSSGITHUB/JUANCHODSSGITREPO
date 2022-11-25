@@ -1,8 +1,4 @@
 package com.dss.dss6msreviewv1.dto;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-import javax.persistence.Column;
 import java.util.Date;
 
 public class ReviewDTO {

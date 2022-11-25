@@ -28,7 +28,6 @@ public class Review {
     }
 
     public Review( int movieId,String description, Date datePosted, int rating) {
-        this.reviewId = reviewId;
         this.movieId = movieId;
         this.description = description;
         this.datePosted = datePosted;

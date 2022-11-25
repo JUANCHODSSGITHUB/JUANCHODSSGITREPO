@@ -2,7 +2,7 @@ package com.dss.dss4msmoviev1.service;
 
 import com.dss.dss4msmoviev1.dto.MovieDTO;
 import com.dss.dss4msmoviev1.dto.UpdateMovieDTO;
-import com.dss.dss4msmoviev1.dto.util.MovieDTOMapper;
+import com.dss.dss4msmoviev1.util.MovieDTOMapper;
 import com.dss.dss4msmoviev1.entity.Movie;
 import com.dss.dss4msmoviev1.exception.CannotDeleteMovieException;
 import com.dss.dss4msmoviev1.exception.MovieNotFoundException;

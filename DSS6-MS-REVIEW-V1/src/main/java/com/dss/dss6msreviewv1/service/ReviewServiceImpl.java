@@ -3,21 +3,17 @@ package com.dss.dss6msreviewv1.service;
 import com.dss.dss6msreviewv1.dto.ReviewDTO;
 import com.dss.dss6msreviewv1.dto.ReviewDTOMapper;
 import com.dss.dss6msreviewv1.entity.Review;
+import com.dss.dss6msreviewv1.exception.MovieNotFoundException;
+import com.dss.dss6msreviewv1.exception.ReviewNotFoundException;
 import com.dss.dss6msreviewv1.repository.ReviewRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.Optional;
 
 @Service
 public class ReviewServiceImpl implements ReviewService{
-
-    private static final Logger LOG =   LoggerFactory.getLogger(ReviewServiceImpl.class);
 
     @Autowired
     ReviewRepository reviewRepository;
@@ -26,79 +22,91 @@ public class ReviewServiceImpl implements ReviewService{
     public Review addReview(ReviewDTO reviewDTO) {
         ReviewDTOMapper reviewDTOMapper = new ReviewDTOMapper();
         Review movie = reviewDTOMapper.mapReview(reviewDTO);
-        Review newMovie = reviewRepository.save(movie);
-        return newMovie;
+        try{
+            return reviewRepository.save(movie);
+        }catch (Exception e){
+            throw new MovieNotFoundException("No movie found with id: " + movie.getMovieId());
+        }
     }
 
     @Override
     public String deleteReview(int id) {
         String responseMessage = null;
-
-        try {
+        Optional<Review> review = reviewRepository.findById(id);
+        if(review.isPresent()) {
             reviewRepository.deleteById(id);
             responseMessage = "Data successfully deleted.";
-
-        }catch(EmptyResultDataAccessException | NoSuchElementException e){
+            return responseMessage;
+        }else {
             responseMessage = "No such data with id = " + id + ".";
-            LOG.error(e.getMessage());
+            throw new ReviewNotFoundException(responseMessage);
         }
-        return responseMessage;
     }
 
     @Override
     public List<Review> viewReviewsByMovieId(int movieId) {
         List<Review> reviewFound = null;
-        try{
-            reviewFound = reviewRepository.findByMovieId(movieId);
-            reviewFound.size(); //for checking
-        }catch (NoSuchElementException | NullPointerException e){
-            LOG.error(e.getMessage());
+
+        reviewFound = reviewRepository.findByMovieId(movieId);
+
+        if(!reviewFound.isEmpty()){
+            return reviewFound;
+        }else{
+            throw new MovieNotFoundException("No reviews found with movie id: " + movieId + ".");
         }
-        return reviewFound;
+
+
     }
 
     @Override
     public Review viewReviewById(int reviewId) {
         Review reviewFound = null;
 
-        try{
-            Optional<Review> review = reviewRepository.findById(reviewId);
+        Optional<Review> review = reviewRepository.findById(reviewId);
+        if(review.isPresent()) {
             reviewFound = review.get();
-        }catch (NoSuchElementException | NullPointerException e){
-            LOG.error(e.getMessage());
+            return reviewFound;
+        }else{
+            throw new ReviewNotFoundException("No reviews found with id: " + reviewId + ".");
         }
-
-        return reviewFound;
     }
 
     @Override
     public List<Review> viewAllReviews() {
         List<Review> reviewList = null;
         reviewList = reviewRepository.findAll();
-        return reviewList;
+
+        if(!reviewList.isEmpty()){
+            return reviewList;
+        }else {
+            throw new ReviewNotFoundException("No movies found.");
+        }
+
     }
 
     @Override
     public String updateReview(int id, ReviewDTO reviewDTO) {
         String responseMessage = null;
         Review reviewFound = null;
-        ReviewDTOMapper reviewDTOMapper = new ReviewDTOMapper();
 
-        try{
-            Optional<Review> movie = reviewRepository.findById(id);
-            reviewFound = movie.get();
-            Review reviewUpdate = reviewDTOMapper.mapReview(reviewDTO);
-            reviewFound.setDescription(reviewUpdate.getDescription());
-            reviewFound.setRating(reviewUpdate.getRating());
-            reviewFound.setMovieId(reviewUpdate.getMovieId());
-            reviewFound.setDatePosted(reviewUpdate.getDatePosted());
-            reviewRepository.save(reviewFound);
-            responseMessage = "Data successfully updated.";
-
-        }catch (NoSuchElementException | NullPointerException e){
-            responseMessage = "No such data with id = " +id + ".";
-            LOG.error(e.getMessage());
+        Optional<Review> movie = reviewRepository.findById(id);
+        if(movie.isPresent()){
+            try {
+                reviewFound = movie.get();
+                reviewFound.setDescription(reviewDTO.getDescription());
+                reviewFound.setRating(reviewDTO.getRating());
+                reviewFound.setMovieId(reviewDTO.getMovieId());
+                reviewFound.setDatePosted(reviewDTO.getDatePosted());
+                reviewRepository.save(reviewFound);
+                responseMessage = "Data successfully updated.";
+                return responseMessage;
+            }catch(Exception e){
+                throw new MovieNotFoundException("No movie found with id: " + reviewDTO.getMovieId());
+            }
+        }else {
+            responseMessage = "No such data with id = " + id + ".";
+            throw new ReviewNotFoundException(responseMessage);
         }
-        return responseMessage;
+
     }
 }

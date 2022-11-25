@@ -1,4 +1,4 @@
-package com.dss.dss4msmoviev1.dto.util;
+package com.dss.dss4msmoviev1.util;
 
 import com.dss.dss4msmoviev1.dto.ActorDTO;
 import com.dss.dss4msmoviev1.dto.MovieDTO;
