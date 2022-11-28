@@ -1,9 +1,12 @@
 package com.dss.dss5msactorv1.controller;
 
 
+import com.dss.dss5msactorv1.dto.ActorDto;
 import com.dss.dss5msactorv1.entity.Actor;
 import com.dss.dss5msactorv1.service.ActorService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,39 +19,39 @@ public class ActorController {
 
 
     @GetMapping("/actor/{id}")
-    public Actor get(@PathVariable int id){
-        Actor actor = null;
-        actor = actorService.findActorById(id);
-        return actor;
+    public ResponseEntity<Actor> getActorById(@PathVariable int id){
+        return new ResponseEntity<>(actorService.findActorById(id), HttpStatus.FOUND);
     }
 
     @GetMapping("/actor/first-name/{firstName}")
-    public List<Actor> getByName(@PathVariable String firstName){
-        List<Actor> actor = null;
-        actor = actorService.findActorByFirstName(firstName);
-        return actor;
+    public ResponseEntity<List<Actor>> getByFirstName(@PathVariable String firstName){
+        return new ResponseEntity<>(actorService.findActorByFirstName(firstName), HttpStatus.FOUND);
+    }
+
+    @GetMapping("/actor/last-name/{lastName}")
+    public ResponseEntity<List<Actor>> getByLastName(@PathVariable String lastName){
+        return new ResponseEntity<>(actorService.findActorByLastName(lastName), HttpStatus.FOUND);
     }
 
     @GetMapping("/actor")
-    public List<Actor> get(){
-        List actorList = actorService.findAllActors();
-        return actorList;
+    public ResponseEntity<List<Actor>> getActors(){
+        return new ResponseEntity<>(actorService.findAllActors(), HttpStatus.FOUND);
     }
 
     @DeleteMapping("/actor/{id}")
-    public String delete(@PathVariable int id){
-        return actorService.deleteActorById(id);
+    public ResponseEntity<String> deleteActor(@PathVariable int id){
+        return new ResponseEntity<>(actorService.deleteActorById(id), HttpStatus.OK);
     }
 
 
     @PostMapping("/actor")
-    public String insert(@RequestBody Actor actor){
-        return actorService.addActor(actor);
+    public ResponseEntity<String> addActor(@RequestBody ActorDto actorDto){
+        return new ResponseEntity<>(actorService.addActor(actorDto), HttpStatus.CREATED);
     }
 
-    @PutMapping("/actor")
-    public String update(@RequestBody Actor actor){
-        return actorService.updateActor(actor);
+    @PutMapping("/actor/{id}")
+    public ResponseEntity<String> updateActor(@PathVariable int id, @RequestBody ActorDto actorDto){
+        return new ResponseEntity<>(actorService.updateActor(id, actorDto), HttpStatus.OK);
     }
 }
 

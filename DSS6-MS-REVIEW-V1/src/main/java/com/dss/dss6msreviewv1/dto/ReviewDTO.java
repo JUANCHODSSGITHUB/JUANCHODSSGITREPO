@@ -30,35 +30,35 @@ public class ReviewDTO {
                 '}';
     }
 
-
+    @SuppressWarnings("unchecked")
     public int getMovieId() {
         return movieId;
     }
-
+    @SuppressWarnings("unchecked")
     public void setMovieId(int movieId) {
         this.movieId = movieId;
     }
-
+    @SuppressWarnings("unchecked")
     public String getDescription() {
         return description;
     }
-
+    @SuppressWarnings("unchecked")
     public void setDescription(String description) {
         this.description = description;
     }
-
+    @SuppressWarnings("unchecked")
     public Date getDatePosted() {
         return datePosted;
     }
-
+    @SuppressWarnings("unchecked")
     public void setDatePosted(Date datePosted) {
         this.datePosted = datePosted;
     }
-
+    @SuppressWarnings("unchecked")
     public int getRating() {
         return rating;
     }
-
+    @SuppressWarnings("unchecked")
     public void setRating(int rating) {
         this.rating = rating;
     }

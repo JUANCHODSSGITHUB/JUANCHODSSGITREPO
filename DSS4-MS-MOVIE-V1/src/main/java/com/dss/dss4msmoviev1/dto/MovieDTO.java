@@ -37,43 +37,43 @@ public class MovieDTO {
                 '}';
     }
 
-
+    @SuppressWarnings("unchecked")
     public String getMovieTitle() {
         return movieTitle;
     }
-
+    @SuppressWarnings("unchecked")
     public void setMovieTitle(String movieTitle) {
         this.movieTitle = movieTitle;
     }
-
+    @SuppressWarnings("unchecked")
     public String getMovieImage() {
         return movieImage;
     }
-
+    @SuppressWarnings("unchecked")
     public void setMovieImage(String movieImage) {
         this.movieImage = movieImage;
     }
-
+    @SuppressWarnings("unchecked")
     public Set<ActorDTO> getActors() {
         return actors;
     }
-
+    @SuppressWarnings("unchecked")
     public void setActors(Set<ActorDTO> actors) {
         this.actors = actors;
     }
-
+    @SuppressWarnings("unchecked")
     public int getMovieCost() {
         return movieCost;
     }
-
+    @SuppressWarnings("unchecked")
     public void setMovieCost(int movieCost) {
         this.movieCost = movieCost;
     }
-
+    @SuppressWarnings("unchecked")
     public int getMovieYear() {
         return movieYear;
     }
-
+    @SuppressWarnings("unchecked")
     public void setMovieYear(int movieYear) {
         this.movieYear = movieYear;
     }

@@ -1,8 +1,8 @@
-package com.dss.dss4msmoviev1.dto;
+package com.dss.dss5msactorv1.dto;
 
 
-public class ActorDTO {
-
+public class ActorDto {
+    private int actorId;
 
     private String firstName;
 
@@ -12,26 +12,15 @@ public class ActorDTO {
 
     private char gender;
 
-    public ActorDTO() {
+    @SuppressWarnings("unchecked")
+    public int getActorId() {
+        return actorId;
     }
 
-    public ActorDTO(String firstName, String lastName, int age, char gender) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.gender = gender;
+    @SuppressWarnings("unchecked")
+    public void setActorId(int actorId) {
+        this.actorId = actorId;
     }
-
-    @Override
-    public String toString() {
-        return "Actor{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", age=" + age +
-                ", gender=" + gender +
-                '}';
-    }
-
     @SuppressWarnings("unchecked")
     public String getFirstName() {
         return firstName;
@@ -64,5 +53,4 @@ public class ActorDTO {
     public void setGender(char gender) {
         this.gender = gender;
     }
-
 }

@@ -27,8 +27,6 @@ class ReviewServiceImplTest {
     @InjectMocks
     private ReviewService reviewService = new ReviewServiceImpl();
 
-    private static final Review REVIEW = new Review();
-    private static final List<Review> RES = new ArrayList<>();
 
     @Test
     void addReview() {
