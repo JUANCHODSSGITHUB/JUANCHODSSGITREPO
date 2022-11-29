@@ -15,7 +15,7 @@ public class MovieDTOMapper {
     public static Movie mapMovie(MovieDTO movieDTO){
 
         return new Movie(movieDTO.getMovieTitle(), movieDTO.getMovieImage(), movieDTO.getActors().parallelStream()
-                .map(actorDTO -> mapActor(actorDTO))
+                .map(MovieDTOMapper::mapActor)
                 .collect(Collectors.toSet()),
                 movieDTO.getMovieCost(), movieDTO.getMovieYear());
     }

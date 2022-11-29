@@ -16,22 +16,10 @@ class UserDTOValidationTest {
                 , "Meneses"
                 , "09212102824");
 
-        Assertions.assertThrows(InvalidInputException.class,() -> UserDTOChecker.validateUserDTOPassword(userDTO.getPassword()));
+        String password = userDTO.getPassword();
+        Assertions.assertThrows(InvalidInputException.class,() -> UserDTOChecker.validateUserDTOPassword(password));
     }
 
-    @Test
-    void correctPasswordFormatValidation() {
-        UserDTO userDTO = new UserDTO("jrvm"
-                , "Passw0rd!"
-                , "jr@mail.com"
-                , "Juancho"
-                , "Meneses"
-                , "09212102824");
-
-
-        String result = UserDTOChecker.validateUserDTOPassword(userDTO.getPassword());
-        Assertions.assertNull(result);
-    }
 
     @Test
     void incorrectFNameFormatValidation() {

@@ -67,6 +67,37 @@ public class UserServiceTest {
         Assertions.assertTrue(userService.authenticate(username, password));
     }
 
+    @Test
+    public void incorrectPassword1() {
+        User user = new User("jrvm"
+                , UserService.encryptPassword("Passw0rd!")
+                , "jr@mail.com"
+                , "Juancho"
+                , "Meneses"
+                , "09212102824");
+
+        Mockito.when(userRepository.findByEmailAndPassword(user.getEmail(), user.getPassword())).thenReturn(user);
+        String username = "jr@mail1.com";
+        String password = "Password!";
+
+        Assertions.assertThrows(LoginFailedException.class, () -> userService.authenticate(username, password));
+    }
+
+    @Test
+    public void correctPassword1() {
+        User user = new User("jrvm"
+                , UserService.encryptPassword("Passw0rd!")
+                , "jr@mail.com"
+                , "Juancho"
+                , "Meneses"
+                , "09212102824");
+
+        Mockito.when(userRepository.findByEmailAndPassword(user.getEmail(), user.getPassword())).thenReturn(user);
+        String username = "jr@mail.com";
+        String password = "Passw0rd!";
+
+        Assertions.assertTrue(userService.authenticate(username, password));
+    }
 
     @Test
     public void unsuccessfulRegistration() {
@@ -168,6 +199,20 @@ public class UserServiceTest {
         Mockito.when(userRepository.findByUserId(user.getUserId())).thenReturn(user);
 
         Assertions.assertEquals("Data successfully deleted.", userService.deleteUser("jrvm"));
+    }
+
+    @Test
+    public void unSuccessfulDeletion() {
+        //phone number already registered
+        User user = new User("jrvm"
+                , "Passw0rd!"
+                , "jr@mail.com"
+                , "Juancho"
+                , "Meneses"
+                , "09212102824");
+        String username = user.getUserId();
+        Mockito.when(userRepository.findByUserId(username)).thenReturn(null);
+        Assertions.assertThrows(UserNotFoundException.class, () -> userService.deleteUser(username));
     }
 
     @Test

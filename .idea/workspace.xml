@@ -6,17 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="38c97e7f-28b9-43ec-98c6-35bdcab63952" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/util/UserDTOChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/util/UserDTOChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/Dss3MsLoginV1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/Dss3MsLoginV1ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/inputValidation/UserDTOValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/inputValidation/UserDTOValidationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/ActorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/ActorDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/MovieDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/MovieDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/UpdateMovieDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/dto/UpdateMovieDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/entity/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/util/MovieDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/main/java/com/dss/dss4msmoviev1/util/MovieDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/test/java/com/dss/dss4msmoviev1/Dss4MsMovieV1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/test/java/com/dss/dss4msmoviev1/Dss4MsMovieV1ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/test/java/com/dss/dss4msmoviev1/service/MovieServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS4-MS-MOVIE-V1/src/test/java/com/dss/dss4msmoviev1/service/MovieServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/controller/ActorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/controller/ActorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/dto/ActorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/dto/ActorDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/entity/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/entity/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/service/ActorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/service/ActorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/service/ActorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/service/ActorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/entity/ActorMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/main/java/com/dss/dss5msactorv1/entity/ActorMovie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/test/java/com/dss/dss5msactorv1/Dss5MsActorV1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/test/java/com/dss/dss5msactorv1/Dss5MsActorV1ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/test/java/com/dss/dss5msactorv1/service/ActorServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS5-MS-ACTOR-V1/src/test/java/com/dss/dss5msactorv1/service/ActorServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/dto/ReviewDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/dto/ReviewDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/main/java/com/dss/dss6msreviewv1/entity/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/test/java/com/dss/dss6msreviewv1/Dss6MsReviewV1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/test/java/com/dss/dss6msreviewv1/Dss6MsReviewV1ApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/test/java/com/dss/dss6msreviewv1/service/ReviewServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/test/java/com/dss/dss6msreviewv1/service/ReviewServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,12 +80,15 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/COLLABERA/Documents/JAVA Training/JUANCHODSSGITREPO",
+    "last_opened_file_path": "C:/Users/COLLABERA/Documents/JAVA Training/Assignment2-Collection",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "8bdc9dffbf8e52e90210c966e0ad5630"
   },
@@ -104,64 +123,19 @@
       <recent name="com.example.dss4msmoviev1.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
-    <configuration name="ActorControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DSS5-MS-ACTOR-V1" />
+  <component name="RunManager" selected="JUnit.UserServiceTest.unSuccessfulDeletion">
+    <configuration name="MovieServiceImplTest.getAllMoviesNoMoviesNone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSS4-MS-MOVIE-V1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dss.dss5msactorv1.controller.*" />
+          <option name="PATTERN" value="com.dss.dss4msmoviev1.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dss.dss5msactorv1.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.dss.dss5msactorv1.controller.ActorControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActorControllerTest.addActor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DSS5-MS-ACTOR-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dss.dss5msactorv1.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dss.dss5msactorv1.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.dss.dss5msactorv1.controller.ActorControllerTest" />
-      <option name="METHOD_NAME" value="addActor" />
+      <option name="PACKAGE_NAME" value="com.dss.dss4msmoviev1.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dss.dss4msmoviev1.service.MovieServiceImplTest" />
+      <option name="METHOD_NAME" value="getAllMoviesNoMoviesNone" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActorServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DSS5-MS-ACTOR-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dss.dss5msactorv1.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dss.dss5msactorv1.service" />
-      <option name="MAIN_CLASS_NAME" value="com.dss.dss5msactorv1.service.ActorServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DSS3-MS-LOGIN-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dss.dss3msloginv1.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dss.dss3msloginv1.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.dss.dss3msloginv1.controller.UserControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,6 +151,54 @@
       <option name="PACKAGE_NAME" value="com.dss.dss3msloginv1.service" />
       <option name="MAIN_CLASS_NAME" value="com.dss.dss3msloginv1.service.UserServiceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.correctPassword1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSS3-MS-LOGIN-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dss.dss3msloginv1.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dss.dss3msloginv1.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dss.dss3msloginv1.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="correctPassword1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.incorrectPassword1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSS3-MS-LOGIN-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dss.dss3msloginv1.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dss.dss3msloginv1.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dss.dss3msloginv1.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="incorrectPassword1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.unSuccessfulDeletion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSS3-MS-LOGIN-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dss.dss3msloginv1.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dss.dss3msloginv1.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dss.dss3msloginv1.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="unSuccessfulDeletion" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -259,10 +281,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ActorControllerTest" />
-      <item itemvalue="JUnit.ActorControllerTest.addActor" />
-      <item itemvalue="JUnit.ActorServiceImplTest" />
-      <item itemvalue="JUnit.UserControllerTest" />
+      <item itemvalue="JUnit.UserServiceTest.correctPassword1" />
+      <item itemvalue="JUnit.UserServiceTest.incorrectPassword1" />
+      <item itemvalue="JUnit.UserServiceTest.unSuccessfulDeletion" />
+      <item itemvalue="JUnit.MovieServiceImplTest.getAllMoviesNoMoviesNone" />
       <item itemvalue="JUnit.UserServiceTest" />
       <item itemvalue="Spring Boot.DssClientApplication" />
       <item itemvalue="Spring Boot.Dss1UiV1Application" />
@@ -277,11 +299,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.unSuccessfulDeletion" />
+        <item itemvalue="JUnit.UserServiceTest.correctPassword1" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserControllerTest" />
-        <item itemvalue="JUnit.ActorControllerTest" />
-        <item itemvalue="JUnit.ActorServiceImplTest" />
-        <item itemvalue="JUnit.ActorControllerTest.addActor" />
+        <item itemvalue="JUnit.UserServiceTest.incorrectPassword1" />
+        <item itemvalue="JUnit.MovieServiceImplTest.getAllMoviesNoMoviesNone" />
       </list>
     </recent_temporary>
   </component>
@@ -311,7 +333,9 @@
       <workItem from="1668389388730" duration="63218000" />
       <workItem from="1669185957183" duration="16558000" />
       <workItem from="1669266171337" duration="57605000" />
-      <workItem from="1669605284564" duration="12423000" />
+      <workItem from="1669605284564" duration="23583000" />
+      <workItem from="1669704165858" duration="5434000" />
+      <workItem from="1669709680046" duration="3773000" />
     </task>
     <servers />
   </component>
@@ -339,24 +363,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java</url>
-          <line>38</line>
-          <properties class="com.dss.dss3msloginv1.service.UserServiceTest" method="incorrectPassword">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java</url>
-          <line>136</line>
-          <properties class="com.dss.dss3msloginv1.service.UserServiceTest" method="successfulRegistration">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/repository/UserRepository.java</url>
           <line>10</line>
           <properties class="com.dss.dss3msloginv1.repository.UserRepository" method="findByEmailAndPassword">
@@ -382,25 +388,6 @@
           </properties>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/test/java/com/dss/dss6msreviewv1/service/ReviewServiceImplTest.java</url>
-          <line>37</line>
-          <properties class="com.dss.dss6msreviewv1.service.ReviewServiceImplTest" method="addReviewFail">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/service/UserServiceTest.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/main/java/com/dss/dss3msloginv1/controller/UserController.java</url>
           <line>23</line>
@@ -410,11 +397,6 @@
           <url>file://$PROJECT_DIR$/DSS3-MS-LOGIN-V1/src/test/java/com/dss/dss3msloginv1/controller/UserControllerTest.java</url>
           <line>79</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DSS6-MS-REVIEW-V1/src/test/java/com/dss/dss6msreviewv1/service/ReviewServiceImplTest.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

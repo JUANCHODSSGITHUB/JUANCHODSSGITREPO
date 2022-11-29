@@ -1,9 +1,15 @@
 package com.dss.dss5msactorv1.entity;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "ACTOR_MOVIE")
 @Entity
 public class ActorMovie {
@@ -12,28 +18,5 @@ public class ActorMovie {
     private int movieId;
     @Column(name = "actor_id")
     private int actorId;
-
-    public ActorMovie() {
-    }
-
-    public ActorMovie(int movieId, int actorId) {
-        this.movieId = movieId;
-        this.actorId = actorId;
-    }
-
-    public int getMovieId() {
-        return movieId;
-    }
-
-    public void setMovieId(int movieId) {
-        this.movieId = movieId;
-    }
-
-    public int getActorId() {
-        return actorId;
-    }
-
-    public void setActorId(int actorId) {
-        this.actorId = actorId;
-    }
+    
 }

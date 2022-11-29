@@ -31,7 +31,6 @@ class MovieServiceImplTest {
     @InjectMocks
     private MovieService movieService = new MovieServiceImpl();
 
-    private static final Movie MOVIE = new Movie();
     private static final List<Movie> RES = new ArrayList<>();
 
 
@@ -39,6 +38,15 @@ class MovieServiceImplTest {
     void getAllMoviesNoMoviesNone() {
         Mockito.when(movieRepository.findAll()).thenReturn(RES);
         assertThrows(MovieNotFoundException.class, () -> movieService.getAllMovies());
+    }
+
+    @Test
+    void getAllMovies() {
+        List<Movie> movieList = new ArrayList<>();
+        movieList.add(mockMovie());
+        Mockito.when(movieRepository.findAll()).thenReturn(movieList);
+        assertNotNull(movieService.getAllMovies());
+        Mockito.verify(movieRepository).findAll();
     }
 
     @Test
@@ -143,7 +151,8 @@ class MovieServiceImplTest {
     void updateMovieFail() {
         Optional<Movie> optionalMovie = Optional.empty();
         Mockito.when(movieRepository.findById(1)).thenReturn(optionalMovie);
-        assertThrows(MovieNotFoundException.class, () -> movieService.updateMovie(1, mockUpdateMovieDTO()));
+        UpdateMovieDTO updateMovieDTO = mockUpdateMovieDTO();
+        assertThrows(MovieNotFoundException.class, () -> movieService.updateMovie(1, updateMovieDTO));
     }
 
     private Movie mockMovie(){

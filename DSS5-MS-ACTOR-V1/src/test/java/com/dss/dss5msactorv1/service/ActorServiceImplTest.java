@@ -114,7 +114,8 @@ class ActorServiceImplTest {
     void updateActorFail() {
         Optional<Actor> optionalActor = Optional.empty();
         Mockito.when(actorRepository.findById(1)).thenReturn(optionalActor);
-        assertThrows(ActorNotFoundException.class, () -> actorService.updateActor(1,mockActorDto()));
+        ActorDto actorDto = mockActorDto();
+        assertThrows(ActorNotFoundException.class, () -> actorService.updateActor(1,actorDto));
     }
 
     @Test

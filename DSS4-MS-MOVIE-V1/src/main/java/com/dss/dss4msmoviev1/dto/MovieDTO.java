@@ -1,8 +1,15 @@
 package com.dss.dss4msmoviev1.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.HashSet;
 import java.util.Set;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class MovieDTO {
 
     private String movieTitle;
@@ -15,16 +22,6 @@ public class MovieDTO {
 
     private int movieYear;
 
-    public MovieDTO() {
-    }
-
-    public MovieDTO(String movieTitle, String movieImage, Set<ActorDTO> actors, int movieCost, int movieYear) {
-        this.movieTitle = movieTitle;
-        this.movieImage = movieImage;
-        this.actors = actors;
-        this.movieCost = movieCost;
-        this.movieYear = movieYear;
-    }
 
     @Override
     public String toString() {
@@ -37,44 +34,4 @@ public class MovieDTO {
                 '}';
     }
 
-    @SuppressWarnings("unchecked")
-    public String getMovieTitle() {
-        return movieTitle;
-    }
-    @SuppressWarnings("unchecked")
-    public void setMovieTitle(String movieTitle) {
-        this.movieTitle = movieTitle;
-    }
-    @SuppressWarnings("unchecked")
-    public String getMovieImage() {
-        return movieImage;
-    }
-    @SuppressWarnings("unchecked")
-    public void setMovieImage(String movieImage) {
-        this.movieImage = movieImage;
-    }
-    @SuppressWarnings("unchecked")
-    public Set<ActorDTO> getActors() {
-        return actors;
-    }
-    @SuppressWarnings("unchecked")
-    public void setActors(Set<ActorDTO> actors) {
-        this.actors = actors;
-    }
-    @SuppressWarnings("unchecked")
-    public int getMovieCost() {
-        return movieCost;
-    }
-    @SuppressWarnings("unchecked")
-    public void setMovieCost(int movieCost) {
-        this.movieCost = movieCost;
-    }
-    @SuppressWarnings("unchecked")
-    public int getMovieYear() {
-        return movieYear;
-    }
-    @SuppressWarnings("unchecked")
-    public void setMovieYear(int movieYear) {
-        this.movieYear = movieYear;
-    }
 }

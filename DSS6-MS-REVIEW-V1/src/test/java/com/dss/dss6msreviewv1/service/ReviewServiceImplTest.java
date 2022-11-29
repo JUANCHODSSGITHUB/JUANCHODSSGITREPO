@@ -37,9 +37,9 @@ class ReviewServiceImplTest {
     @Test
     void addReviewFail() {
         Mockito.when(reviewRepository.save(any(Review.class))).thenThrow(RuntimeException.class);
-        MovieNotFoundException exception = assertThrows(MovieNotFoundException.class,
-                () -> reviewService.addReview(mockReviewDTO()));
-        assertEquals("No movie found with id: " + mockReviewDTO().getMovieId(), exception.getMessage());
+        ReviewDTO reviewDTO = mockReviewDTO();
+        assertThrows(MovieNotFoundException.class, () -> reviewService.addReview(reviewDTO));
+
     }
 
     @Test
@@ -115,7 +115,8 @@ class ReviewServiceImplTest {
     void updateReviewFail() {
         Optional<Review> optionalReview = Optional.empty();
         Mockito.when(reviewRepository.findById(1)).thenReturn(optionalReview);
-        assertThrows(ReviewNotFoundException.class, () -> reviewService.updateReview(1, mockReviewDTO()));
+        ReviewDTO reviewDTO = mockReviewDTO();
+        assertThrows(ReviewNotFoundException.class, () -> reviewService.updateReview(1, reviewDTO));
     }
 
     @Test
@@ -123,8 +124,9 @@ class ReviewServiceImplTest {
         Optional<Review> optionalReview = Optional.of(mockReview());
         Mockito.when(reviewRepository.findById(1)).thenReturn(optionalReview);
         Mockito.when(reviewRepository.save(any(Review.class))).thenThrow(RuntimeException.class);
+        ReviewDTO reviewDTO = mockReviewDTO();
         MovieNotFoundException exception = assertThrows(MovieNotFoundException.class,
-                () -> reviewService.updateReview(1, mockReviewDTO()));
+                () -> reviewService.updateReview(1, reviewDTO));
         assertEquals("No movie found with id: " + mockReviewDTO().getMovieId(), exception.getMessage());
     }
 

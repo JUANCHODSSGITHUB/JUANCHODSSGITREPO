@@ -1,7 +1,14 @@
 package com.dss.dss5msactorv1.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "ACTORS")
 @Entity
 public class Actor {
@@ -21,8 +28,6 @@ public class Actor {
     @Column(name="GENDER", nullable = false)
     private char gender;
 
-    public Actor() {
-    }
 
     public Actor( String firstName, String lastName, int age, char gender) {
 
@@ -43,43 +48,4 @@ public class Actor {
                 '}';
     }
 
-    public int getActorId() {
-        return actorId;
-    }
-
-    public void setActorId(int actorId) {
-        this.actorId = actorId;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public char getGender() {
-        return gender;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
-    }
-}
+   }

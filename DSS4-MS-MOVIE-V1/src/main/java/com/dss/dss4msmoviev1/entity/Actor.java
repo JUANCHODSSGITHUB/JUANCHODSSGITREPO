@@ -1,10 +1,15 @@
 package com.dss.dss4msmoviev1.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Set;
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "ACTORS")
 @Entity
 public class Actor {
@@ -33,8 +38,6 @@ public class Actor {
              inverseJoinColumns = @JoinColumn(name = "movie_id"))
     private Set<Movie> movies;
 
-    public Actor() {
-    }
 
     public Actor(String firstName, String lastName, int age, char gender) {
         this.firstName = firstName;
@@ -54,44 +57,5 @@ public class Actor {
                 '}';
     }
 
-    public int getActorId() {
-        return actorId;
-    }
-
-    public void setActorId(int actorId) {
-        this.actorId = actorId;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public char getGender() {
-        return gender;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
-    }
 
 }

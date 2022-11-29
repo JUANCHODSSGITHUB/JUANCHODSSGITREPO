@@ -22,8 +22,9 @@ public class UserServiceImpl implements UserService {
     public String addUser(UserDTO user) {
         String responseMessage = null;
 
+        UserDTOChecker.validateUserDTO(user);
+        UserDTOChecker.validateUserDTOPassword(user.getPassword());
 
-        if (UserDTOChecker.validateUserDTO(user).isEmpty() && UserDTOChecker.validateUserDTOPassword(user.getPassword()) == null) {
             if (userRepository.findByUserId(user.getLoginId()) == null
                     && userRepository.findByEmail(user.getEmail()) == null) {
                 if (userRepository.findByPhoneNumber(user.getPhoneNumber()) == null) {
@@ -32,6 +33,7 @@ public class UserServiceImpl implements UserService {
                     User saveUser = UserDTOMapper.mapUser(user);
                     userRepository.save(saveUser);
                     responseMessage = "Account successfully registered.";
+                    return responseMessage;
                 } else {
                     responseMessage = "Phone number is already registered.";
                     throw new AdminAlreadyExistsException(responseMessage);
@@ -40,9 +42,6 @@ public class UserServiceImpl implements UserService {
                 responseMessage = "Username/email already exists.";
                 throw new AdminAlreadyExistsException(responseMessage);
             }
-        }
-
-        return responseMessage;
 
     }
 
@@ -52,7 +51,6 @@ public class UserServiceImpl implements UserService {
         User accountById = userRepository.findByUserIdAndPassword(login, hashedPassword);
         User accountByEmail = userRepository.findByEmailAndPassword(login, hashedPassword);
         if (accountById != null || accountByEmail != null) {
-
            return true;
         }else{
             throw new LoginFailedException("Incorrect username/password.");
@@ -71,7 +69,6 @@ public class UserServiceImpl implements UserService {
             responseMessage = "No such account with username = " + id + ".";
             throw new UserNotFoundException(responseMessage);
         }
-
         return responseMessage;
     }
 
@@ -82,8 +79,7 @@ public class UserServiceImpl implements UserService {
         User accountById = userRepository.findByUserIdAndPassword(userId, hashedPassword);
         User accountByEmail = userRepository.findByEmailAndPassword(userId, hashedPassword);
         String hashedPassword2 = UserService.encryptPassword(password2);
-
-        if (UserDTOChecker.validateUserDTOPassword(password2) == null) {
+        UserDTOChecker.validateUserDTOPassword(password2);
             if (accountById != null) {
                 accountById.setPassword(hashedPassword2);
                 userRepository.save(accountById);
@@ -96,8 +92,7 @@ public class UserServiceImpl implements UserService {
                 responseMessage = "Incorrect username/password.";
                 throw new LoginFailedException(responseMessage);
             }
-        }
+        return responseMessage;
 
-            return responseMessage;
     }
 }
