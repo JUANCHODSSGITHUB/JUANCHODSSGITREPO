@@ -1,16 +1,14 @@
 package com.dss.dss4msmoviev1.entity;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.*;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="MOVIES")
+@Table(name = "MOVIES")
 @Entity
 public class Movie {
     @Id
@@ -61,4 +59,51 @@ public class Movie {
                 '}';
     }
 
+    public int getMovieId() {
+        return movieId;
+    }
+
+    public void setMovieId(int movieId) {
+        this.movieId = movieId;
+    }
+
+    public String getMovieTitle() {
+        return movieTitle;
+    }
+
+    public void setMovieTitle(String movieTitle) {
+        this.movieTitle = movieTitle;
+    }
+
+    public String getMovieImage() {
+        return movieImage;
+    }
+
+    public void setMovieImage(String movieImage) {
+        this.movieImage = movieImage;
+    }
+
+    public Set<Actor> getActors() {
+        return actors;
+    }
+
+    public void setActors(Set<Actor> actors) {
+        this.actors = actors;
+    }
+
+    public int getMovieCost() {
+        return movieCost;
+    }
+
+    public void setMovieCost(int movieCost) {
+        this.movieCost = movieCost;
+    }
+
+    public int getMovieYear() {
+        return movieYear;
+    }
+
+    public void setMovieYear(int movieYear) {
+        this.movieYear = movieYear;
+    }
 }

@@ -17,6 +17,11 @@ public class UserDTOChecker {
     public static void validateUserDTO(UserDTO userDTO) throws InvalidInputException{
         String validationMessage;
 
+        if(userDTO.getEmail() == null || userDTO.getLoginId() == null){
+            validationMessage = "Invalid null inputs for login ID/email fields.";
+            throw new InvalidInputException(validationMessage);
+        }
+
         if(userDTO.getFirstName()!= null && userDTO.getLastName()!= null){
             Pattern namePattern = Pattern.compile(NAME_PATTERN);
             if(!namePattern.matcher(userDTO.getFirstName()).matches() || !namePattern.matcher(userDTO.getLastName()).matches()){
@@ -39,11 +44,6 @@ public class UserDTOChecker {
             throw new InvalidInputException(validationMessage);
         }
 
-
-        if(userDTO.getEmail() == null || userDTO.getPhoneNumber() == null || userDTO.getLoginId() == null){
-            validationMessage = "Invalid null inputs for fields.";
-            throw new InvalidInputException(validationMessage);
-        }
 
 
 

@@ -97,7 +97,7 @@ public class ActorServiceImpl implements ActorService {
             responseMessage = "Data successfully updated.";
             return responseMessage;
         }else{
-            responseMessage = "No such data with id = " + actor.getActorId() + ".";
+            responseMessage = "No such data with id = " + id + ".";
             throw new ActorNotFoundException(responseMessage);
         }
 

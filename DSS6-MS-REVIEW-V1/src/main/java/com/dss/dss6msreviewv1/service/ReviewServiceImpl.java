@@ -79,7 +79,7 @@ public class ReviewServiceImpl implements ReviewService{
         if(!reviewList.isEmpty()){
             return reviewList;
         }else {
-            throw new ReviewNotFoundException("No movies found.");
+            throw new ReviewNotFoundException("No reviews found.");
         }
 
     }

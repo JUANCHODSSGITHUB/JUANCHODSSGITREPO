@@ -11,12 +11,13 @@ import com.dss.dss3msloginv1.util.TokenUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.mockito.Mockito;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
+import static org.mockito.ArgumentMatchers.any;
 
 import java.util.Optional;
 
@@ -28,6 +29,9 @@ public class UserServiceTest {
     @MockBean
     private UserRepository userRepository;
 
+    @MockBean
+    private TokenUtil tokenUtil;
+
     @Autowired
     private UserService userService;
 
@@ -38,7 +42,7 @@ public class UserServiceTest {
     @Test
     public void incorrectPassword() {
         User user = new User("jrvm"
-                , UserService.encryptPassword("Passw0rd!")
+                , UserService.encryptPassword("Passw0rd!", "SHA-512")
                 , "jr@mail.com"
                 , "Juancho"
                 , "Meneses"
@@ -54,23 +58,24 @@ public class UserServiceTest {
    @Test
     public void correctPassword() {
         User user = new User("jrvm"
-                , UserService.encryptPassword("Passw0rd!")
+                , UserService.encryptPassword("Passw0rd!", "SHA-512")
                 , "jr@mail.com"
                 , "Juancho"
                 , "Meneses"
                 , "09212102824");
 
         Mockito.when(userRepository.findByUserIdAndPassword(user.getUserId(), user.getPassword())).thenReturn(user);
+        Mockito.when(tokenUtil.generateToken(user)).thenReturn(TOKEN);
         String username = "jrvm";
         String password = "Passw0rd!";
 
-        Assertions.assertTrue(userService.authenticate(username, password));
+       Assertions.assertEquals(TOKEN, userService.authenticate(username,password));
     }
 
     @Test
     public void incorrectPassword1() {
         User user = new User("jrvm"
-                , UserService.encryptPassword("Passw0rd!")
+                , UserService.encryptPassword("Passw0rd!", "SHA-512")
                 , "jr@mail.com"
                 , "Juancho"
                 , "Meneses"
@@ -86,17 +91,18 @@ public class UserServiceTest {
     @Test
     public void correctPassword1() {
         User user = new User("jrvm"
-                , UserService.encryptPassword("Passw0rd!")
+                , UserService.encryptPassword("Passw0rd!", "SHA-512")
                 , "jr@mail.com"
                 , "Juancho"
                 , "Meneses"
                 , "09212102824");
 
         Mockito.when(userRepository.findByEmailAndPassword(user.getEmail(), user.getPassword())).thenReturn(user);
+        Mockito.when(tokenUtil.generateToken(user)).thenReturn(TOKEN);
         String username = "jr@mail.com";
         String password = "Passw0rd!";
 
-        Assertions.assertTrue(userService.authenticate(username, password));
+        Assertions.assertEquals(TOKEN, userService.authenticate(username,password));
     }
 
     @Test
@@ -218,7 +224,7 @@ public class UserServiceTest {
     @Test
     public void unsuccessfulChangePassword() {
         User user = new User("jrvm"
-                , UserService.encryptPassword("Passw0rd!")
+                , UserService.encryptPassword("Passw0rd!", "SHA-512")
                 , "jr@mail.com"
                 , "Juancho"
                 , "Meneses"
@@ -234,7 +240,7 @@ public class UserServiceTest {
     @Test
     public void successfulChangePassword() {
         User user = new User("jrvm"
-                , UserService.encryptPassword("Passw0rd!")
+                , UserService.encryptPassword("Passw0rd!", "SHA-512")
                 , "jr@mail.com"
                 , "Juancho"
                 , "Meneses"
@@ -250,7 +256,7 @@ public class UserServiceTest {
     @Test
     public void successfulChangePasswordEmail() {
         User user = new User("jrvm"
-                , UserService.encryptPassword("Passw0rd!")
+                , UserService.encryptPassword("Passw0rd!", "SHA-512")
                 , "jr@mail.com"
                 , "Juancho"
                 , "Meneses"
@@ -263,6 +269,16 @@ public class UserServiceTest {
         Assertions.assertEquals("Password changed successfully.", userService.changePassword(username, password, password2));
     }
 
+
+    @Test
+    public void incorrectAlgorithm(){
+
+        String password = "Passw0rd!";
+        String algorithm = "SHA-5112";
+
+        Assertions.assertThrows(RuntimeException.class, ()-> UserService.encryptPassword(password, algorithm));
+
+    }
 
 
 

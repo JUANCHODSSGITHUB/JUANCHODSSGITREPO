@@ -31,6 +31,8 @@ class UserControllerTest {
     @MockBean
     private UserService userService;
 
+    private static final String TOKEN = "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJVc2VyIFNlcnZpY2UiLCJzdWIiOiI5MTcyZGUyNS0zMTBlLTRmNGUtYjkyMC05MGVhMzc2YzcwZDMiLCJpYXQiOjE2Njc4MDM1MjMsImV4cCI6MTY2NzgwNDQyMywidXNlciI6InJ1c3NlckBnbWFpbC5jb20ifQ.AquWFWo6d3wPnWjtSy7jpgovEbkemeN56Cbg1YX8zuhytbz8ADNBWZqn7Y6qRyuA2dniG_W4mjWhw56TIZB3fw";
+
     @Test
     void successfulRegisterAccount() throws Exception {
         UserDTO userDTO = new UserDTO("jrvm"
@@ -104,7 +106,7 @@ class UserControllerTest {
                 , "Meneses"
                 , "09212102828");
 
-        Mockito.when(userService.authenticate(any(String.class), any(String.class))).thenReturn(true);
+        Mockito.when(userService.authenticate(any(String.class), any(String.class))).thenReturn(TOKEN);
 
         this.mockMvc.perform(post("/dss/api/user/login").contentType(MediaType.APPLICATION_JSON)
                         .header("username", userDTO.getLoginId())
